@@ -5,6 +5,11 @@
             this.cacheElements();
             this.createEventListeners();
             this.textWriter(this.$informationAboutMe, "Backend Developer + Web Designer");
+
+            window.onscroll = function() {
+                var top = document.body.scrollTop + document.documentElement.scrollTop == 0;
+                document.querySelector('.arrow').style.display = top ? 'block' : 'none';
+            };
         },
         cacheElements() {
             this.$HamburgerButton = document.querySelector('.open-overlay');
