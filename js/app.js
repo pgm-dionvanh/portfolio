@@ -17,6 +17,8 @@
 
             /* Navigation items */
             this.$navigationOverlay = document.querySelector('.navigation--overlay');
+
+            this
             
         },
         textWriter(obj, content) {
@@ -40,6 +42,40 @@
                     topBar = document.querySelector('.bar-top'),
                     middleBar = document.querySelector('.bar-middle'),
                     bottomBar = document.querySelector('.bar-bottom');
+
+                    nav__item__2.addEventListener('click', (e) => {
+                        this.$navigationOverlay.classList.remove('overlay--slide__down');
+
+                        this.$navigationOverlay.classList.add('overlay--slide__up');
+                        this.$navigationOverlay.classList.toggle('active');
+
+                        topBar.classList.remove('animate-top-bar');
+                        topBar.classList.add('animate-out-top-bar');
+    
+                        middleBar.classList.remove('animate-middle-bar');
+                        middleBar.classList.add('animate-out-middle-bar')
+    
+                        bottomBar.classList.remove('animate-bottom-bar');
+                        bottomBar.classList.add('animate-out-bottom-bar')
+    
+                        this.$navigationOverlay.classList.remove('overlay--slide__down');
+                        this.$navigationOverlay.classList.add('overlay--slide__up');
+    
+                        nav__item__1.classList.remove('slide-out-nav-item');
+                        nav__item__1.classList.add('slide-in-nav-item-back');
+    
+                        nav__item__2.classList.remove('slide-out-nav-item-delay-1');
+                        nav__item__2.classList.add('slide-in-nav-item-delay-1-back');
+    
+                        nav__item__3.classList.remove('slide-out-nav-item-delay-2');
+                        nav__item__3.classList.add("slide-in-nav-item-delay-2-back");
+    
+                        nav__item__4.classList.remove('slide-out-nav-item-delay-3');
+                        nav__item__4.classList.add('slide-in-nav-item-delay-3-back');
+    
+                        nav__item__5.classList.remove('slide-out-nav-item-delay-4');
+                        nav__item__5.classList.add('slide-in-nav-item-delay-4-back');
+                    })
 
                 this.$navigationOverlay.classList.toggle('active');
 
