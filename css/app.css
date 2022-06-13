@@ -7,7 +7,9 @@
 }
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 .home {
     font-family: "Work Sans", sans-serif !important;
@@ -470,15 +472,12 @@ nav li:nth-of-type(5) {
     }
 }
 
-#about {
+#about,#contact {
     font-size: 1.4rem;
-    position: relative;
-    z-index: 5;
-    clip-path: polygon(0 0, 0, 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
-    background-attachment: fixed;
+
 }
 
-#about .title {
+.title {
     padding-top: 1rem;
     grid-column-end: span 4;
     display: flex;
@@ -486,11 +485,11 @@ nav li:nth-of-type(5) {
     align-items: center;
 }
 
-#about .title h3 {
+.title h3 {
     font-size: 2.4rem;
 }
 
-#about .separator {
+.separator {
     background: #672C86;
     width: 150px;
     height: 2px;
@@ -523,6 +522,9 @@ nav li:nth-of-type(5) {
 }
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: whitesmoke;
     padding: 0.5rem;
     bottom: 0;
@@ -532,6 +534,12 @@ footer {
     color: #404040;
     margin: 10px 0;
     text-align: center;
+}
+
+.c-socials a {
+    text-decoration: none;
+    width:4rem;
+    color: black
 }
 
 .c-author__link {
@@ -622,4 +630,70 @@ footer {
     line-height: 30px;
     color: #ffffff;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.margin-button {
+    margin-bottom: 1rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project .title--project {
+    display: flex;
+}
+
+.project .project--img {
+    margin-right: 2rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.buttons button:first-child {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.project .buttons button:last-child {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #672C86;
+}
+
+#contactForm {
+    display: flex;
+}
+
+input,textarea {
+    margin-bottom:1rem;
+    padding: 0.5rem;
+}
+
+.contact--row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 15rem;
+}
+
+textarea {
+    width: 15rem;
+    height: 8rem;
+}
+
+.contact--row {
+    display: flex;
 }

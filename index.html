@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <title>Dion Van Hecke - Portfolio</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
     <link rel="stylesheet" href="./css/app.css">
-
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 </head>
 
 <body class="no-padding" translate="no">
@@ -13,16 +13,16 @@
             <ul>
                 <li><a href="#" data-tip="Het begin">Home</a></li>
                 <li><a href="#about" data-tip="Nieuwsgierig?">Over</a></li>
-                <li><a href="#" data-tip="Skills">Skills</a></li>
-                <li><a href="#" data-tip="Alleen het beste">Projecten</a></li>
-                <li><a href="#" data-tip="Twijfel niet!">Contact</a></li>
+                <li><a href="#skills" data-tip="Skills">Skills</a></li>
+                <li><a href="#projects" data-tip="Alleen het beste">Projecten</a></li>
+                <li><a href="#contact" data-tip="Twijfel niet!">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <section class="home">
         <h1>
-            <a>DVH</a>
+            <a href="index.html">DVH</a>
         </h1>
         <div class="open-overlay">
             <span class="bar-top"></span>
@@ -40,55 +40,139 @@
     <section id="about">
         <div class="title">
             <h3>Wie ben ik?</h3>
-            <p class="separator"/>
+            <p class="separator" />
         </div>
         <div class="flexcontainer">
             <div class="info">
-                <span> Hallo, mijn naam is Dion Van Hecke ik ben een developer die momenteel studeerd aan de artevelde hogeschool.</span>
-                <img src="./img/profile.jpg" alt="Edd Yerburgh" class="center-block img-responsive img-circle"/>
+                <span> Hallo, mijn naam is Dion Van Hecke ik ben een developer die momenteel studeerd aan de artevelde
+                    hogeschool.</span>
+                <img src="./img/profile.jpg" alt="Dion Van Hecke" class="center-block img-responsive img-circle" />
             </div>
-          
-        </div>
-        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-            <div class="skillbar clearfix " data-percent="90%">
-              <div class="skillbar-title" style="background: #DD1E2F;"><span>Javascript</span></div>
-              <div class="skillbar-bar" style="background: #DD1E2F;"></div>
-              <div class="skill-bar-percent">90%</div>
-            </div> <!-- End Skill Bar -->
-  
-            <div class="skillbar clearfix " data-percent="80%">
-              <div class="skillbar-title" style="background: #EBB035;"><span>Php</span></div>
-              <div class="skillbar-bar" style="background: #EBB035;"></div>
-              <div class="skill-bar-percent">80%</div>
-            </div> <!-- End Skill Bar -->
-  
-            <div class="skillbar clearfix " data-percent="75%">
-              <div class="skillbar-title" style="background: #218559;"><span>Vue</span></div>
-              <div class="skillbar-bar" style="background: #218559;"></div>
-              <div class="skill-bar-percent">75%</div>
-            </div> <!-- End Skill Bar -->
-  
-            <div class="skillbar clearfix " data-percent="45%">
-              <div class="skillbar-title" style="background: #6840D4;"><span>HTML</span></div>
-              <div class="skillbar-bar" style="background: #6840D4;"></div>
-              <div class="skill-bar-percent">45%</div>
-            </div> <!-- End Skill Bar -->
 
-          </div>
         </div>
-      </div>
+        <section id="skills">
+            <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title" style="background: #DD1E2F;"><span>Javascript</span></div>
+                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title" style="background: #EBB035;"><span>Php</span></div>
+                    <div class="skillbar-bar" style="background: #EBB035;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="75%">
+                    <div class="skillbar-title" style="background: #218559;"><span>Vue</span></div>
+                    <div class="skillbar-bar" style="background: #218559;"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="45%">
+                    <div class="skillbar-title" style="background: #6840D4;"><span>HTML</span></div>
+                    <div class="skillbar-bar" style="background: #6840D4;"></div>
+                    <div class="skill-bar-percent">45%</div>
+                </div> <!-- End Skill Bar -->
+
+            </div>
+            </div>
+            </div>
+        </section>
     </section>
-    <section id="about">
+    <section id="projects">
         <div class="title">
             <h3>Projecten</h3>
-            <p class="separator"/>
+            <p class="separator" />
+            <div class="projects">
+                <div class="project">
+                    <div class="title--project">
+                        <div class="project--img">
+                            <img src="https://via.placeholder.com/240" alt="">
+                        </div>
+                        <div class="project--desc">
+                            Example project
+                            <div class="buttons">
+                                <button onclick="window.location.href = 'project.html'">More info</button>
+                                <button
+                                    onclick="window.location.href = 'https://github.com/pgm-dionvanh'">Github</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="title">
+            <h3>Contact</h3>
+            <p class="separator" />
+            <div class="container">
+
+                <!--end second row-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form name="sentMessage" id="contactForm" novalidate="">
+                            <div class="contact--row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name *" id="name"
+                                            required="" data-validation-required-message="Please enter your name."
+                                            aria-invalid="false">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <!--end form-group-->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email *" id="email"
+                                            required=""
+                                            data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <!--end form-group-->
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Gsm *" id="phone"
+                                            required=""
+                                            data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <!--end form-group-->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Bericht *" id="message" required=""
+                                            data-validation-required-message="Please enter a message."
+                                            aria-invalid="false"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div class="buttons">
+                                    <button type="submit" class="btn btn-xl margin-button">Verstuur bericht</button>
+                                </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="c-author">
-            Built with 💛 &nbsp; by <a target="_blank" class="c-author__link" >Dion Van Hecke</a>
-          </div>
+            Built with 💛 &nbsp; by <a target="_blank" class="c-author__link">Dion Van Hecke</a>
+        </div>
+        <div class="c-socials">
+            <a href="https://github.com/pgm-dionvanh">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://be.linkedin.com/in/dion-van-hecke-798391232?trk=people_directory">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js
 
@@ -96,7 +180,7 @@
 
     "></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
